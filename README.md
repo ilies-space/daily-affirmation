@@ -4,4 +4,11 @@
 
 
 Screen shots
+
+![Alt text](screenshots/thumbnail.png?raw=true "Optional Title")
 ![Alt text](thumbnailmain.png?raw=true "Optional Title")
+
+
+![Alt text](screenshots/screen.png?raw=true "Optional Title")
+![Alt text](screenshots/screen2.png?raw=true "Optional Title")
+![Alt text](screenshots/screen3.png?raw=true "Optional Title")
