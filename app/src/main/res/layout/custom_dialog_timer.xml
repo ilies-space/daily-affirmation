@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="15dp"
+    android:background="@drawable/gradiant"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/choice1"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/roundedbg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="المذكرة"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choice2"
+        android:layout_margin="20dp"
+        android:background="@drawable/roundedbg"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:id="@+id/textView56"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="تقييم التطبيق" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choice3"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/roundedbg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="إرسال ملاحظات"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <Button
+        android:fontFamily="@font/zahra"
+        android:textSize="28sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:id="@+id/btn_close"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:text="الخروج" />
+
+</LinearLayout>

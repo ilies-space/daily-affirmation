@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:id="@+id/adsinfo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/zahra"
+        android:gravity="center"
+        android:text="تصنيف : توكيدات ايجابية"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/viewpager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/roundedbg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:onClick="category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/category" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/zahra"
+                android:gravity="center"
+                android:text="الصنف"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="alarm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/alarm" />
+
+            <TextView
+                android:id="@+id/textView254"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/zahra"
+                android:gravity="center"
+                android:text="التنبيهات"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="musicbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/musicimg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/musicon" />
+
+            <TextView
+                android:id="@+id/musictxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/zahra"
+                android:gravity="center"
+                android:text="الصوت"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="navigation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:tint="@android:color/white"
+                android:layout_margin="8dp"
+                android:id="@+id/imageV54iew"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/nav" />
+
+            <TextView
+                android:id="@+id/textView512"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/zahra"
+                android:gravity="center"
+                android:text="القائمة"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/adsinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:fontFamily="@font/zahra"
+        android:gravity="center"
+        android:text="هذا الإعلان يساعد على ابقاء التطبيق مجانا"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-8413340411601992/1920275819"/>
+</LinearLayout>
